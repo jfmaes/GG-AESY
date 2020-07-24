@@ -1,5 +1,7 @@
 Blogpost: https://redteamer.tips/introducing-gg-aesy-a-stegocryptor/
 
+**WARNING: you might need to restore NuGet packages before compiling. If anyone knows how I can get rid of this problem, DM me.**
+
 <!-- wp:heading {"align":"center"} -->
 <h2 class="has-text-align-center">Manual</h2>
 <!-- /wp:heading -->
