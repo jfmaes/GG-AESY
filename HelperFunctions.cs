@@ -142,7 +142,12 @@ namespace AESAllTheThings
                 {
                     throw new ArgumentException("you'll need to specify the offset in order to unpack");
                 }
-
+                
+                if (payloadSize == 0)
+                {
+                    throw new ArgumentException("you'll need to specify the payload size in order to unpack correctly.");
+                }
+                
                 byte[] buffer = new byte[payloadSize];
                 buffer = ReadUntilNextMarkerOrUntilEndOfSize(image, offsetDec, offsetHex, payloadSize);
                 File.WriteAllBytes(outFile,buffer);
